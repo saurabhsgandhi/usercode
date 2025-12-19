@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import axios from 'axios';
 import LineChart from '../components/Chart';
+import axios from 'axios';
 
 const Stocks = () => {
     const [chartData, setChartData] = useState({});
@@ -35,7 +35,7 @@ const Stocks = () => {
                         'rgba(153, 102, 255, 0.2)',
                         'rgba(255, 159, 64, 0.2)'
                     ],
-                    borderWidth: 1
+                    borderWidth: 5
                 }],
             });
             setSummary(response.data.chart.result[0].meta);
